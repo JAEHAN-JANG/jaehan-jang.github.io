@@ -24,7 +24,7 @@ Backend & Full-Stack Developer
 - 웹과 데이터베이스 연동 구조 이해
 - MVC 기반 서버 로직 설계 경험
 
-🔗 Repository: https://github.com/JAEHAN-JANG/gcshop
+🔗 Repository & Demo : https://github.com/JAEHAN-JANG/gcshop
 
 ---
 
