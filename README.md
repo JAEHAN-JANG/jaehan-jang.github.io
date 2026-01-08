@@ -37,7 +37,7 @@ https://github.com/JAEHAN-JANG/gcshop
 - OpenWeather API, OpenAI API 연동
 - 팀 프로젝트에서 **프론트엔드·백엔드·DB 설계 전반 담당**
 
-🔗 **Repository**  
+🔗 **Repository & Demo**   
 https://github.com/JAEHAN-JANG/p-carbon-neutral
 
 ---
@@ -50,8 +50,7 @@ https://github.com/JAEHAN-JANG/p-carbon-neutral
 - 예측 모델을 실제 서비스 기능으로 연동
 - **데이터 수집 → 모델 학습 → 서비스 적용 전 과정 경험**
 
-🔗 Repository: *(학과 서버 사용으로 비공개)*  
-🔗 Demo: *(시연 중심 프로젝트)*
+🔗 **Repository & Demo**  
 
 ---
 
