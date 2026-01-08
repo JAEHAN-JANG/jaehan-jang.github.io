@@ -18,14 +18,14 @@ Backend & Full-Stack Developer
 ## 📂 Projects
 
 ### 🛒 GCShop (가천샵)  
-> 대학 수업 프로젝트로 제작한 쇼핑몰 웹 서비스
+> 대학 수업 프로젝트로 제작한 쇼핑몰 웹 서비스 
 
 - 상품 조회, 회원 관리, 장바구니, 구매 기능 구현
 - 웹과 데이터베이스 연동 구조 이해
 - MVC 기반 서버 로직 설계 경험
 
-🔗 Repository: *(준비 중)*  
-🔗 Demo: *(준비 중)*
+🔗 Repository: https://github.com/JAEHAN-JANG/gcshop
+🖼 Demo: https://github.com/JAEHAN-JANG/gcshop#screenshots
 
 ---
 
