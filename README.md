@@ -60,12 +60,13 @@ https://github.com/JAEHAN-JANG/MeongNyang-Care
 
 - React + Spring Boot 기반 서비스 개발
 - 관리자 인증, 파일 업로드, 콘텐츠 관리 기능 구현
-- **회사 코드 비공개 / 케이스 스터디 형태로 정리**
+- **회사 코드 비공개**
 
-🔗 Case Study: *(준비 중)*
+🔗 **Repository & Demo**  
+https://github.com/JAEHAN-JANG/wellbridge-homepage
 
 ---
 
 ## 📌 Contact
 - GitHub: https://github.com/JAEHAN-JANG
-- Email: (원하면 나중에 추가)
+- Email: twinsjh01@naver.com
