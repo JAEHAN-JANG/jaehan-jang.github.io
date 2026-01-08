@@ -51,6 +51,7 @@ https://github.com/JAEHAN-JANG/p-carbon-neutral
 - **데이터 수집 → 모델 학습 → 서비스 적용 전 과정 경험**
 
 🔗 **Repository & Demo**  
+https://github.com/JAEHAN-JANG/MeongNyang-Care
 
 ---
 
