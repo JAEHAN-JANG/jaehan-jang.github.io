@@ -69,10 +69,11 @@ https://github.com/JAEHAN-JANG/wellbridge-homepage
 ---
 
 ### 🏢 Quiz Battle 
-> 실무 환경에서 진행한 기업 홈페이지 및 관리자 시스템 개발
+> 웹 소켓을 이용한 HTML / CSS / JS 지식 1대1 배틀 웹 서비스
 
-- HTML / CSS / JS 기반 서비스 개발
-- 웹 소켓을 이용한 HTML / CSS / JS 지식 1대1 배틀
+- Node.js(server) + Vanilla Js 기반 서비스 개발
+- socket.io를 통해 Room 번호 기반 실시간 1 vs 1 기능 구현
+- 퀴즈 문제 : json (static DB) + server에서 랜덤 문제 출제
 
 🔗 **Repository & Demo**  
 https://github.com/JAEHAN-JANG/Quiz-Battle
