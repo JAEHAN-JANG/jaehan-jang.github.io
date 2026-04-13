@@ -80,6 +80,9 @@ https://github.com/JAEHAN-JANG/wellbridge-homepage
 Main Repository: https://github.com/kb7-blackpink/Blackpink_AccountBook  
 Deploy Repository: https://github.com/kb7-blackpink/Blackpink_AccountBook_json-server
 
+**Deploy**
+https://blackpink-account-book.vercel.app/
+
 ---
 
 ### 🌱 Carbon Neutral Platform (P-Project)
