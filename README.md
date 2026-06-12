@@ -140,12 +140,32 @@ https://github.com/JAEHAN-JANG/Quiz-Battle
 
 ---
 
+### 🤖 Habit Check / Codex AI MCP
+
+> Codex Agent와 함께 개발 흐름을 설계하고 검증한 AI Pair Programming 실험 프로젝트
+
+* 하루 단위 습관을 기록하고 관리하는 Habit Check 웹 앱 개발
+* Vanilla JavaScript 기반으로 습관 추가 / 수정 / 삭제 / 완료 처리 기능 구현
+* 날짜별 습관 기록을 `localStorage`에 저장하고 조회하는 구조 설계
+* Codex Agent와 협업하기 위한 `AGENTS.md`, Issue, PR, 리뷰 흐름 정리
+* Core Test / Smoke Test를 통해 핵심 로직과 앱 실행 흐름 검증
+* GitHub Actions 기반 테스트 자동화 및 Docker Build 검증 환경 구성
+* 단순 앱 구현을 넘어 **AI와 협업 가능한 개발 프로세스와 검증 루프를 설계한 프로젝트**
+
+🔗 **Repository & Demo**
+https://github.com/JAEHAN-JANG/codex-ai-mcp
+
+---
+
 ## 🏆 Highlights
-- 실무 기업 홈페이지 및 관리자 시스템 개발 경험
-- AI 기반 졸업 프로젝트 수행
-- 탄소 중립화 플랫폼 프로젝트 수행
-- 가계부 웹 앱 팀 프로젝트에서 캘린더 기능 및 배포 담당
-- 백엔드 · 프론트엔드 · AI 프로젝트를 모두 경험한 개발자
+
+* 실무 기업 홈페이지 및 관리자 시스템 개발 경험
+* AI 기반 졸업 프로젝트 수행
+* 탄소 중립화 플랫폼 프로젝트 수행
+* 가계부 웹 앱 팀 프로젝트에서 캘린더 기능 및 배포 담당
+* WebSocket 기반 실시간 1대1 퀴즈 배틀 서비스 구현
+* Codex Agent와 함께 Habit Check 앱을 개발하며 AI Pair Programming, 테스트 자동화, CI/CD 검증 흐름 경험
+* 백엔드 · 프론트엔드 · AI · AI 협업 개발을 모두 경험한 개발자
 
 ---
 
