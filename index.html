@@ -9,7 +9,7 @@
     <title>JAEHAN JANG | Backend & Full-Stack Developer</title>
     <meta
       name="description"
-      content="장재한 포트폴리오 | Backend & Full-Stack Developer | Spring Boot, React, Node.js, MySQL, Docker, Codex, GitHub Actions"
+      content="장재한 포트폴리오 | Backend & Full-Stack Developer | Spring Boot, Spring Legacy, MyBatis, React, Vue 3, Node.js, MySQL, Redis, WebSocket, Docker, k6"
     />
     <meta name="author" content="JAEHAN JANG" />
     <link rel="stylesheet" href="style.css" />
@@ -43,7 +43,8 @@
             서비스의 구조와 흐름을 이해하고, 사용자 입장에서 가장 편리한 개발을
             지향합니다. 단순히 기능을 구현하는 것을 넘어, 프론트엔드부터
             백엔드, 데이터베이스, 배포 환경까지 연결된 전체 흐름을 고려하며
-            개발합니다.
+            개발합니다. 최근에는 6인 팀의 팀장으로 실시간 알림과 채팅 인프라를
+            설계하고, 성능을 감이 아니라 측정으로 판단하는 경험을 쌓았습니다.
           </p>
 
           <div class="hero-actions">
@@ -59,16 +60,16 @@
 
           <div class="hero-metrics">
             <div class="metric-card">
-              <strong>7+</strong>
+              <strong>8+</strong>
               <span>Major Projects</span>
             </div>
             <div class="metric-card">
-              <strong>Full Cycle</strong>
-              <span>기획 · 개발 · 배포 경험</span>
+              <strong>Team Lead</strong>
+              <span>6인 팀 · 7주 종합실무</span>
             </div>
             <div class="metric-card">
-              <strong>AI + Web</strong>
-              <span>서비스 적용 · 협업 경험</span>
+              <strong>Full Cycle</strong>
+              <span>기획 · 개발 · 배포 · 성능 측정</span>
             </div>
           </div>
         </div>
@@ -83,9 +84,10 @@
             <p>백엔드 / 풀스택 개발자</p>
 
             <ul class="profile-info">
-              <li><span>Core</span><strong>Java, Spring Boot, Node.js</strong></li>
-              <li><span>Frontend</span><strong>React, Vue, Vite, JavaScript</strong></li>
-              <li><span>Infra</span><strong>Docker, Nginx, PM2, Railway</strong></li>
+              <li><span>Core</span><strong>Java, Spring Boot, Spring Legacy, Node.js</strong></li>
+              <li><span>Frontend</span><strong>React, Vue 3, Vite, JavaScript</strong></li>
+              <li><span>Realtime</span><strong>SSE, WebSocket/STOMP, Redis</strong></li>
+              <li><span>Infra</span><strong>Docker, Nginx, AWS EC2, Vercel</strong></li>
               <li><span>AI/Data</span><strong>Python, U-Net, BERT, Codex</strong></li>
             </ul>
           </div>
@@ -110,20 +112,21 @@
           </article>
 
           <article class="card">
-            <h3>사용자 입장을 고려한 개발</h3>
+            <h3>고치기 전에 먼저 재봅니다</h3>
             <p>
-              결국 서비스는 사용자가 쓰는 것이기 때문에, 복잡한 내부 구현보다
-              사용자에게 얼마나 직관적이고 편리한 경험을 제공하느냐를 중요하게
-              생각합니다.
+              부하테스트에서 병목을 커넥션풀로 지목했지만, 고치기 전에
+              확인했더니 제 진단이 틀렸습니다. 측정 프로토콜을 세워 다시 재고
+              진짜 병목을 특정했습니다. 개선안도 기준에 미달하면 근거를 남기고
+              기각합니다.
             </p>
           </article>
 
           <article class="card">
-            <h3>끝까지 만들어본 경험</h3>
+            <h3>무엇을 잃는지 알고 결정합니다</h3>
             <p>
-              수업 프로젝트, 팀 프로젝트, 졸업 프로젝트, 실무형 홈페이지 개발
-              경험을 통해 프론트엔드, 백엔드, 데이터, 배포까지 실제로 연결해본
-              경험이 있습니다.
+              팀 규모와 일정을 고려해 메시지 브로커를 걷어냈지만, 브로커가
+              해주던 재처리 보장이 사라진다는 걸 알았기 때문에 실패 큐와 재시도
+              배치를 직접 만들었습니다. 그 구조가 실제로 알림 결함을 잡아냈습니다.
             </p>
           </article>
         </div>
@@ -137,10 +140,23 @@
 
         <div class="stack-grid">
           <div class="stack-card">
+            <h3>Language</h3>
+            <div class="tag-list">
+              <span>Java</span>
+              <span>JavaScript</span>
+              <span>Python</span>
+              <span>SQL</span>
+            </div>
+          </div>
+
+          <div class="stack-card">
             <h3>Backend</h3>
             <div class="tag-list">
               <span>Java</span>
               <span>Spring Boot</span>
+              <span>JPA</span>
+              <span>Spring Framework</span>
+              <span>MyBatis</span>
               <span>Node.js</span>
               <span>Express</span>
               <span>JSON Server</span>
@@ -148,10 +164,23 @@
           </div>
 
           <div class="stack-card">
+            <h3>Realtime / Messaging</h3>
+            <div class="tag-list">
+              <span>SSE (SseEmitter)</span>
+              <span>Spring Event</span>
+              <span>WebSocket</span>
+              <span>STOMP</span>
+              <span>Socket.io</span>
+              <span>DLQ + Retry Batch</span>
+            </div>
+          </div>
+
+          <div class="stack-card">
             <h3>Frontend</h3>
             <div class="tag-list">
               <span>React</span>
-              <span>Vue</span>
+              <span>Vue 3</span>
+              <span>Pinia</span>
               <span>Vite</span>
               <span>JavaScript</span>
               <span>HTML/CSS</span>
@@ -164,6 +193,7 @@
             <h3>Database</h3>
             <div class="tag-list">
               <span>MySQL</span>
+              <span>Redis</span>
             </div>
           </div>
 
@@ -171,11 +201,23 @@
             <h3>DevOps / Infra</h3>
             <div class="tag-list">
               <span>Docker</span>
+              <span>Docker Compose</span>
               <span>Nginx</span>
+              <span>AWS EC2</span>
               <span>PM2</span>
               <span>GitHub Actions</span>
               <span>Railway</span>
               <span>Vercel</span>
+            </div>
+          </div>
+
+          <div class="stack-card">
+            <h3>Testing / Performance</h3>
+            <div class="tag-list">
+              <span>k6</span>
+              <span>JUnit</span>
+              <span>JaCoCo</span>
+              <span>Swagger (Springfox)</span>
             </div>
           </div>
 
@@ -214,6 +256,69 @@
           <article class="project-card featured">
             <div class="project-top">
               <div>
+                <p class="project-type">Team Project · Team Lead</p>
+                <h3>탕탕 · 지갑재판소 (TangTang)</h3>
+              </div>
+              <a
+                href="https://github.com/KB-TangTang/Monorepo"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+                >Repository ↗</a
+              >
+            </div>
+
+            <p class="project-summary">
+              고정지출을 자동으로 탐지하고, 절약 시뮬레이션과 챌린지로 행동을
+              유도한 뒤, 월간 리포트로 실제 절감액까지 검증하는 자산관리 서비스.
+              6인 팀의 팀장으로 7주간 진행하며 실시간 알림과 채팅 인프라, 외부
+              금융기관 연동, 성능 측정을 담당했습니다.
+            </p>
+
+            <ul class="project-points">
+              <li>
+                Spring Legacy + MyBatis 기반 모듈러 모놀리스 설계.
+                API 54개 · 테이블 34개 · 라인 커버리지 84.0%
+              </li>
+              <li>
+                실시간 알림 계층 구현. 초기 설계의 Kafka를 걷어내면서 브로커가
+                해주던 재처리 보장을 DLQ 테이블과 재시도 배치로 직접 구현
+              </li>
+              <li>
+                그룹 재판 채팅을 STOMP over WebSocket + Redis로 구현. 번호
+                발급과 저장이 따로 나가 발생하던 메시지 순서 역전을 Lua 스크립트
+                원자화로 해결
+              </li>
+              <li>
+                은행 · 카드 · 대출 · 페이머니 전 업권 금융기관 연동과 CODEF
+                규격 동일 목 서버 자체 구축
+              </li>
+              <li>
+                k6 부하테스트로 배포 환경 실측. 70 VU까지 효율 95% 선형,
+                140 VU까지 요청 실패 0%, 병목을 MySQL CPU로 특정
+              </li>
+              <li>
+                팀장으로 기술 결정 198건을 기록하고 되돌린 결정도 남김
+              </li>
+            </ul>
+
+            <div class="project-tags">
+              <span>Spring Framework</span>
+              <span>MyBatis</span>
+              <span>MySQL</span>
+              <span>Redis</span>
+              <span>SSE</span>
+              <span>WebSocket/STOMP</span>
+              <span>Vue 3</span>
+              <span>Docker</span>
+              <span>AWS EC2</span>
+              <span>k6</span>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-top">
+              <div>
                 <p class="project-type">Team Project</p>
                 <h3>Carbon Neutral Platform (P-Project)</h3>
               </div>
@@ -229,13 +334,14 @@
             <p class="project-summary">
               탄소 배출량 계산 및 중립화 지원 웹 서비스. 사용자 입력을 기반으로
               배출량을 계산하고, 월별·평균·전월 대비 데이터를 비교 및
-              시각화했습니다.
+              시각화했습니다. 교내 P-프로젝트 1등 수상.
             </p>
 
             <ul class="project-points">
               <li>사용자 입력 기반 탄소 배출량 계산 로직 구현</li>
               <li>월별·평균·전월 비교 데이터 시각화</li>
               <li>OpenWeather API, OpenAI API 연동</li>
+              <li>외부 API 실패 시 사전 정의 가이드로 전환하는 폴백 로직 구성</li>
               <li>프론트엔드·백엔드·DB 설계 전반 담당</li>
             </ul>
 
@@ -320,8 +426,6 @@
             </div>
           </article>
 
-
-
           <article class="project-card featured">
             <div class="project-top">
               <div>
@@ -386,6 +490,7 @@
               <li>상품 조회, 회원 관리, 장바구니, 구매 기능 구현</li>
               <li>웹과 데이터베이스 연동 구조 이해</li>
               <li>MVC 기반 서버 로직 설계 경험</li>
+              <li>구매 성공 조건을 백엔드에서 먼저 검증한 뒤 재고·마일리지 차감</li>
             </ul>
 
             <div class="project-tags">
@@ -417,7 +522,7 @@
             </p>
 
             <ul class="project-points">
-              <li>AI Hub 이미지 데이터 기반 피부 질환 분류</li>
+              <li>AI Hub 이미지 데이터 약 1.3TB 기반 피부 질환 분류</li>
               <li>CNN / U-Net 모델 학습 및 성능 개선</li>
               <li>예측 모델을 실제 서비스 기능과 연동</li>
               <li>데이터 수집 → 모델 학습 → 서비스 적용 전 과정 경험</li>
@@ -454,6 +559,10 @@
             <ul class="project-points">
               <li>React + Spring Boot 기반 서비스 개발</li>
               <li>관리자 인증, 파일 업로드, 콘텐츠 관리 기능 구현</li>
+              <li>
+                등록한 이미지가 사용자 화면에 노출되지 않던 오류를 추적해 저장
+                경로·접근 URL·배포 경로 기준을 하나로 통일
+              </li>
               <li>실무 환경의 개발 흐름과 유지보수 구조 경험</li>
               <li>회사 코드 비공개</li>
             </ul>
@@ -476,14 +585,6 @@
 
         <div class="value-grid">
           <article class="card">
-            <h3>빠른 적응력</h3>
-            <p>
-              새로운 기술이나 환경을 마주했을 때 빠르게 구조를 파악하고 실제
-              기능으로 연결하는 데 익숙합니다.
-            </p>
-          </article>
-
-          <article class="card">
             <h3>전체 흐름에 대한 이해</h3>
             <p>
               프론트엔드, 백엔드, 데이터베이스, 배포를 연결해 생각할 수 있어
@@ -492,11 +593,20 @@
           </article>
 
           <article class="card">
-            <h3>실행 중심</h3>
+            <h3>측정으로 판단합니다</h3>
             <p>
-              단순히 아이디어에 머무르지 않고 직접 구현하고 검증하며 개선하는
-              방식으로 성장해왔습니다. AI 협업 개발에서도 테스트와 문서화 기준을
-              세워 안정적으로 결과물을 완성하려고 합니다.
+              성능은 감이 아니라 숫자로 말합니다. 부하테스트로 병목을 특정하고,
+              개선안이 기준에 미달하면 근거를 남기고 기각합니다. 기본값을 그냥
+              둔 것과 재보고 맞다고 확인한 것은 다른 이야기라고 생각합니다.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>기록으로 남기는 협업</h3>
+            <p>
+              팀장으로 기술 결정을 이유·영향·기각한 대안과 함께 기록했고,
+              되돌린 결정도 지우지 않았습니다. 나중에 왜 이렇게 되어 있는지
+              묻는 질문마다 답이 이미 적혀 있었습니다.
             </p>
           </article>
         </div>
