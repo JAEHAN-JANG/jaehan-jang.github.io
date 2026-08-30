@@ -2,634 +2,748 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>JAEHAN JANG | Backend & Full-Stack Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>장재한 | 재보고 결정하는 백엔드 개발자</title>
     <meta
       name="description"
-      content="장재한 포트폴리오 | Backend & Full-Stack Developer | Spring Boot, Spring Legacy, MyBatis, React, Vue 3, Node.js, MySQL, Redis, WebSocket, Docker, k6"
+      content="장재한 포트폴리오. 성능은 감이 아니라 측정으로 판단합니다. Spring Boot, Spring Legacy, MyBatis, MySQL, Redis, WebSocket, k6."
     />
     <meta name="author" content="JAEHAN JANG" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="bg-orb orb-1"></div>
-    <div class="bg-orb orb-2"></div>
-    <div class="bg-grid"></div>
-
     <header class="header">
       <div class="container nav">
         <a href="#" class="logo">JAEHAN JANG</a>
         <nav class="nav-links">
-          <a href="#about">About</a>
-          <a href="#stack">Stack</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <a href="#about">기준</a>
+          <a href="#experience">이력</a>
+          <a href="#projects">프로젝트</a>
+          <a href="#stack">기술</a>
+          <a href="#contact">연락</a>
         </nav>
       </div>
     </header>
 
     <main>
+      <!-- ================= HERO ================= -->
       <section class="hero container">
-        <div class="hero-text">
-          <p class="hero-label">PORTFOLIO</p>
-          <h1>
-            Backend & Full-Stack Developer<br />
-            <span>JAEHAN JANG</span>
-          </h1>
-          <p class="hero-description">
-            서비스의 구조와 흐름을 이해하고, 사용자 입장에서 가장 편리한 개발을
-            지향합니다. 단순히 기능을 구현하는 것을 넘어, 프론트엔드부터
-            백엔드, 데이터베이스, 배포 환경까지 연결된 전체 흐름을 고려하며
-            개발합니다. 최근에는 6인 팀의 팀장으로 실시간 알림과 채팅 인프라를
-            설계하고, 성능을 감이 아니라 측정으로 판단하는 경험을 쌓았습니다.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
-            <a
-              href="https://github.com/JAEHAN-JANG"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-secondary"
-              >GitHub</a
-            >
-          </div>
-
-          <div class="hero-metrics">
-            <div class="metric-card">
-              <strong>8+</strong>
-              <span>Major Projects</span>
-            </div>
-            <div class="metric-card">
-              <strong>Team Lead</strong>
-              <span>6인 팀 · 7주 종합실무</span>
-            </div>
-            <div class="metric-card">
-              <strong>Full Cycle</strong>
-              <span>기획 · 개발 · 배포 · 성능 측정</span>
-            </div>
-          </div>
+        <div class="hero-id">
+          <h1>장재한</h1>
+          <p class="role">BACKEND / FULL-STACK DEVELOPER</p>
         </div>
 
-        <div class="hero-panel">
-          <div class="profile-card">
-            <div class="profile-status">
-              <span class="status-dot"></span>
-              Open to Opportunity
-            </div>
-            <h2>장재한</h2>
-            <p>백엔드 / 풀스택 개발자</p>
+        <p class="thesis">
+          성능은 감이 아니라 <em>측정</em>으로 판단합니다.
+        </p>
+        <p class="thesis-sub">
+          부하테스트에서 병목을 커넥션풀로 지목했지만, 고치기 전에 확인했더니 제
+          진단이 틀렸습니다. 측정 프로토콜을 세우고 다시 재서 진짜 병목을
+          찾았습니다. 아래는 그때 얻은 곡선입니다.
+        </p>
 
-            <ul class="profile-info">
-              <li><span>Core</span><strong>Java, Spring Boot, Spring Legacy, Node.js</strong></li>
-              <li><span>Frontend</span><strong>React, Vue 3, Vite, JavaScript</strong></li>
-              <li><span>Realtime</span><strong>SSE, WebSocket/STOMP, Redis</strong></li>
-              <li><span>Infra</span><strong>Docker, Nginx, AWS EC2, Vercel</strong></li>
-              <li><span>AI/Data</span><strong>Python, U-Net, BERT, Codex</strong></li>
+        <!-- signature: real k6 measurement -->
+        <figure class="plot">
+          <figcaption class="plot-head">
+            <strong>부하 곡선 · VU당 처리 효율</strong>
+            <span>탕탕 지갑재판소 · AWS EC2 2 vCPU · 부하 생성기 분리 측정</span>
+          </figcaption>
+
+          <svg
+            viewBox="0 0 720 300"
+            role="img"
+            aria-label="동시 사용자 수가 늘어날수록 VU당 처리 효율이 떨어지는 곡선. 70 VU까지 95퍼센트를 유지하다 120 VU에서 81퍼센트로 꺾입니다."
+          >
+            <!-- gridlines -->
+            <line class="grid-line" x1="60" y1="40" x2="690" y2="40" />
+            <line class="grid-line" x1="60" y1="92.5" x2="690" y2="92.5" />
+            <line class="grid-line" x1="60" y1="145" x2="690" y2="145" />
+            <line class="grid-line" x1="60" y1="197.5" x2="690" y2="197.5" />
+            <line class="grid-line" x1="60" y1="250" x2="690" y2="250" />
+
+            <text class="axis-text" x="52" y="44" text-anchor="end">100%</text>
+            <text class="axis-text" x="52" y="96.5" text-anchor="end">90%</text>
+            <text class="axis-text" x="52" y="149" text-anchor="end">80%</text>
+            <text class="axis-text" x="52" y="201.5" text-anchor="end">70%</text>
+            <text class="axis-text" x="52" y="254" text-anchor="end">60%</text>
+
+            <text class="axis-text" x="82" y="272" text-anchor="middle">5</text>
+            <text class="axis-text" x="285" y="272" text-anchor="middle">50</text>
+            <text class="axis-text" x="375" y="272" text-anchor="middle">70</text>
+            <text class="axis-text" x="510" y="272" text-anchor="middle">100</text>
+            <text class="axis-text" x="600" y="272" text-anchor="middle">120</text>
+            <text class="axis-text" x="690" y="272" text-anchor="middle">140</text>
+            <text class="axis-text" x="375" y="292" text-anchor="middle">
+              동시 사용자 (VU)
+            </text>
+
+            <path
+              class="curve-fill"
+              d="M82.5,40 L105,45.25 L150,50.5 L195,50.5 L240,50.5 L285,61 L375,66.25 L510,97.75 L600,139.75 L690,176.5 L690,250 L82.5,250 Z"
+            />
+            <polyline
+              class="curve"
+              points="82.5,40 105,45.25 150,50.5 195,50.5 240,50.5 285,61 375,66.25 510,97.75 600,139.75 690,176.5"
+            />
+
+            <g class="knee">
+              <line class="knee-line" x1="600" y1="139.75" x2="600" y2="250" />
+              <circle class="knee-dot" cx="600" cy="139.75" r="5" />
+              <text class="knee-text" x="588" y="112" text-anchor="end">
+                무릎 120 VU · 효율 81%
+              </text>
+            </g>
+          </svg>
+
+          <div class="plot-foot">
+            <span><i>전 구간 요청 실패</i> 0%</span>
+            <span><i>처리량 천장</i> 약 300 req/s</span>
+            <span><i>응답시간 중 서버 처리 비중</i> 97.7%</span>
+            <span><i>병목</i> MySQL CPU (mysqld 88.2% vs java 47.1%)</span>
+          </div>
+        </figure>
+
+        <div class="readout">
+          <div>
+            <b>84.0%</b>
+            <span>라인 커버리지</span>
+          </div>
+          <div>
+            <b>54</b>
+            <span>구현·문서화 API</span>
+          </div>
+          <div>
+            <b>198</b>
+            <span>기록한 기술 결정</span>
+          </div>
+          <div>
+            <b>1,121</b>
+            <span>통과한 백엔드 테스트</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ABOUT ================= -->
+      <section id="about" class="section">
+        <div class="container rail">
+          <p class="label">기준</p>
+          <div>
+            <h2>일할 때 지키는 네 가지</h2>
+            <p class="section-lede">
+              기술을 얼마나 아는지보다, 판단이 틀렸을 때 어떻게 하는지가 저를 더
+              잘 설명한다고 생각합니다.
+            </p>
+
+            <ul class="principles">
+              <li>
+                <h3>고치기 전에 먼저 잽니다</h3>
+                <p>
+                  진단이 맞는지 확인하지 않고 손대면, 효과 없는 변경을 커밋해
+                  놓고 고쳤다고 적게 됩니다. 개선안이 기준에 미달하면 근거를
+                  남기고 기각합니다.
+                </p>
+              </li>
+              <li>
+                <h3>무엇을 잃는지 알고 결정합니다</h3>
+                <p>
+                  팀 규모와 일정을 고려해 메시지 브로커를 걷어냈지만, 브로커가
+                  해주던 재처리 보장이 사라진다는 걸 알았기에 실패 큐와 재시도
+                  배치를 직접 만들었습니다.
+                </p>
+              </li>
+              <li>
+                <h3>되돌린 결정도 지우지 않습니다</h3>
+                <p>
+                  결정을 이유·영향·기각한 대안과 함께 남겼습니다. 나중에 왜
+                  이렇게 되어 있는지 묻는 질문마다 답이 이미 적혀 있었습니다.
+                </p>
+              </li>
+              <li>
+                <h3>숫자가 바뀌는 기능은 검증이 먼저입니다</h3>
+                <p>
+                  재고와 포인트는 서버에서 먼저 검증한 뒤 차감했고, 동시성 때문에
+                  채팅 번호가 어긋나는 문제는 원자적 연산으로 해결했습니다.
+                </p>
+              </li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section id="about" class="section container">
-        <div class="section-heading">
-          <p class="section-label">ABOUT</p>
-          <h2>저는 이런 개발자입니다</h2>
-        </div>
-
-        <div class="about-grid">
-          <article class="card">
-            <h3>구조를 이해하는 개발</h3>
-            <p>
-              화면 하나를 만드는 데서 끝나지 않고, 요청이 서버를 거쳐
-              데이터베이스에 저장되고 다시 사용자에게 전달되는 전체 흐름을
-              이해하려고 합니다. 그래서 기능 구현뿐 아니라 구조 설계에도
-              관심이 많습니다.
+      <!-- ================= EXPERIENCE ================= -->
+      <section id="experience" class="section">
+        <div class="container rail">
+          <p class="label">이력</p>
+          <div>
+            <h2>이력</h2>
+            <p class="section-lede">
+              실무 3개월과 6인 팀 프로젝트 7주. 둘 다 만들고 끝난 게 아니라
+              운영까지 닿은 경험입니다.
             </p>
-          </article>
 
-          <article class="card">
-            <h3>고치기 전에 먼저 재봅니다</h3>
-            <p>
-              부하테스트에서 병목을 커넥션풀로 지목했지만, 고치기 전에
-              확인했더니 제 진단이 틀렸습니다. 측정 프로토콜을 세워 다시 재고
-              진짜 병목을 특정했습니다. 개선안도 기준에 미달하면 근거를 남기고
-              기각합니다.
-            </p>
-          </article>
+            <ul class="timeline">
+              <li>
+                <div class="when">
+                  <b>2026.03 – 2026.08</b>
+                  960시간 · 수료
+                </div>
+                <div class="what">
+                  <h3>KB IT&rsquo;s Your Life 7기</h3>
+                  <p class="org">멀티캠퍼스 · 웹 풀스택 개발 과정</p>
+                  <ul>
+                    <li>
+                      종합실무 프로젝트 「탕탕 · 지갑재판소」에서 6인 팀장으로 7주
+                      진행
+                    </li>
+                    <li>
+                      실시간 알림과 그룹 채팅 인프라, 전 업권 금융기관 연동,
+                      성능 측정 담당
+                    </li>
+                    <li>동기 CS 스터디 스터디장으로 주제 선정과 진행 총괄</li>
+                  </ul>
+                </div>
+              </li>
 
-          <article class="card">
-            <h3>무엇을 잃는지 알고 결정합니다</h3>
-            <p>
-              팀 규모와 일정을 고려해 메시지 브로커를 걷어냈지만, 브로커가
-              해주던 재처리 보장이 사라진다는 걸 알았기 때문에 실패 큐와 재시도
-              배치를 직접 만들었습니다. 그 구조가 실제로 알림 결함을 잡아냈습니다.
-            </p>
-          </article>
-        </div>
-      </section>
+              <li>
+                <div class="when">
+                  <b>2025.09 – 2025.12</b>
+                  3개월 · 현장실습
+                </div>
+                <div class="what">
+                  <h3>㈜웰브릿지 개발팀 인턴</h3>
+                  <p class="org">기업 홈페이지와 관리자 시스템 풀스택 단독 구축</p>
+                  <ul>
+                    <li>
+                      Spring Boot와 JPA로 관리자 인증, JWT 권한 제어, 콘텐츠
+                      CRUD, 이미지 업로드·조회 API 직접 구현
+                    </li>
+                    <li>
+                      등록한 이미지가 사용자 화면에 안 보이던 오류를 추적해 저장
+                      경로·접근 URL·배포 경로 기준을 하나로 통일하고 문서로 남김
+                    </li>
+                    <li>Nginx와 PM2 운영 배포 구조 점검, CS 응대 병행</li>
+                  </ul>
+                </div>
+              </li>
 
-      <section id="stack" class="section container">
-        <div class="section-heading">
-          <p class="section-label">TECH STACK</p>
-          <h2>기술 스택</h2>
-        </div>
-
-        <div class="stack-grid">
-          <div class="stack-card">
-            <h3>Language</h3>
-            <div class="tag-list">
-              <span>Java</span>
-              <span>JavaScript</span>
-              <span>Python</span>
-              <span>SQL</span>
-            </div>
-          </div>
-
-          <div class="stack-card">
-            <h3>Backend</h3>
-            <div class="tag-list">
-              <span>Java</span>
-              <span>Spring Boot</span>
-              <span>JPA</span>
-              <span>Spring Framework</span>
-              <span>MyBatis</span>
-              <span>Node.js</span>
-              <span>Express</span>
-              <span>JSON Server</span>
-            </div>
-          </div>
-
-          <div class="stack-card">
-            <h3>Realtime / Messaging</h3>
-            <div class="tag-list">
-              <span>SSE (SseEmitter)</span>
-              <span>Spring Event</span>
-              <span>WebSocket</span>
-              <span>STOMP</span>
-              <span>Socket.io</span>
-              <span>DLQ + Retry Batch</span>
-            </div>
-          </div>
-
-          <div class="stack-card">
-            <h3>Frontend</h3>
-            <div class="tag-list">
-              <span>React</span>
-              <span>Vue 3</span>
-              <span>Pinia</span>
-              <span>Vite</span>
-              <span>JavaScript</span>
-              <span>HTML/CSS</span>
-              <span>Tailwind CSS</span>
-              <span>Chart.js</span>
-            </div>
-          </div>
-
-          <div class="stack-card">
-            <h3>Database</h3>
-            <div class="tag-list">
-              <span>MySQL</span>
-              <span>Redis</span>
-            </div>
-          </div>
-
-          <div class="stack-card">
-            <h3>DevOps / Infra</h3>
-            <div class="tag-list">
-              <span>Docker</span>
-              <span>Docker Compose</span>
-              <span>Nginx</span>
-              <span>AWS EC2</span>
-              <span>PM2</span>
-              <span>GitHub Actions</span>
-              <span>Railway</span>
-              <span>Vercel</span>
-            </div>
-          </div>
-
-          <div class="stack-card">
-            <h3>Testing / Performance</h3>
-            <div class="tag-list">
-              <span>k6</span>
-              <span>JUnit</span>
-              <span>JaCoCo</span>
-              <span>Swagger (Springfox)</span>
-            </div>
-          </div>
-
-          <div class="stack-card">
-            <h3>AI / Data</h3>
-            <div class="tag-list">
-              <span>Python</span>
-              <span>TensorFlow</span>
-              <span>U-Net</span>
-              <span>BERT</span>
-              <span>Codex</span>
-            </div>
-          </div>
-
-          <div class="stack-card">
-            <h3>Tools</h3>
-            <div class="tag-list">
-              <span>Git</span>
-              <span>GitHub</span>
-              <span>GitHub Actions</span>
-              <span>VS Code</span>
-              <span>Figma</span>
-              <span>Codex</span>
-            </div>
+              <li>
+                <div class="when">
+                  <b>2020.03 – 2026.02</b>
+                  평점 4.03 / 4.5
+                </div>
+                <div class="what">
+                  <h3>가천대학교 컴퓨터공학부</h3>
+                  <p class="org">컴퓨터공학전공 · 전공심화</p>
+                  <ul>
+                    <li>
+                      P-실무프로젝트 1등 장학금 수상 (탄소중립 플랫폼, 교내 1등)
+                    </li>
+                    <li>
+                      ATLAS 중앙 농구동아리 회장으로 지원금과 회비 재정 관리 총괄
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <section id="projects" class="section container">
-        <div class="section-heading">
-          <p class="section-label">PROJECTS</p>
-          <h2>프로젝트</h2>
-        </div>
-
-        <div class="project-list">
-          <article class="project-card featured">
-            <div class="project-top">
-              <div>
-                <p class="project-type">Team Project · Team Lead</p>
-                <h3>탕탕 · 지갑재판소 (TangTang)</h3>
-              </div>
-              <a
-                href="https://github.com/KB-TangTang/Monorepo"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-link"
-                >Repository ↗</a
-              >
-            </div>
-
-            <p class="project-summary">
-              고정지출을 자동으로 탐지하고, 절약 시뮬레이션과 챌린지로 행동을
-              유도한 뒤, 월간 리포트로 실제 절감액까지 검증하는 자산관리 서비스.
-              6인 팀의 팀장으로 7주간 진행하며 실시간 알림과 채팅 인프라, 외부
-              금융기관 연동, 성능 측정을 담당했습니다.
+      <!-- ================= PROJECTS ================= -->
+      <section id="projects" class="section">
+        <div class="container rail">
+          <p class="label">프로젝트</p>
+          <div>
+            <h2>프로젝트</h2>
+            <p class="section-lede">
+              각 프로젝트에서 내린 판단을 함께 적었습니다. 채택한 것과 기각한
+              것을 나눠 표시했습니다.
             </p>
 
-            <ul class="project-points">
-              <li>
-                Spring Legacy + MyBatis 기반 모듈러 모놀리스 설계.
-                API 54개 · 테이블 34개 · 라인 커버리지 84.0%
-              </li>
-              <li>
-                실시간 알림 계층 구현. 초기 설계의 Kafka를 걷어내면서 브로커가
-                해주던 재처리 보장을 DLQ 테이블과 재시도 배치로 직접 구현
-              </li>
-              <li>
-                그룹 재판 채팅을 STOMP over WebSocket + Redis로 구현. 번호
-                발급과 저장이 따로 나가 발생하던 메시지 순서 역전을 Lua 스크립트
-                원자화로 해결
-              </li>
-              <li>
-                은행 · 카드 · 대출 · 페이머니 전 업권 금융기관 연동과 CODEF
-                규격 동일 목 서버 자체 구축
-              </li>
-              <li>
-                k6 부하테스트로 배포 환경 실측. 70 VU까지 효율 95% 선형,
-                140 VU까지 요청 실패 0%, 병목을 MySQL CPU로 특정
-              </li>
-              <li>
-                팀장으로 기술 결정 198건을 기록하고 되돌린 결정도 남김
-              </li>
-            </ul>
+            <div class="projects">
+              <!-- 탕탕 -->
+              <article class="project lead">
+                <div class="p-meta">
+                  <b>2026.07 – 08</b>
+                  7주 · 6인 중 팀장
+                  <span class="tag">Backend / Infra</span>
+                </div>
 
-            <div class="project-tags">
-              <span>Spring Framework</span>
-              <span>MyBatis</span>
-              <span>MySQL</span>
-              <span>Redis</span>
-              <span>SSE</span>
-              <span>WebSocket/STOMP</span>
-              <span>Vue 3</span>
-              <span>Docker</span>
-              <span>AWS EC2</span>
-              <span>k6</span>
+                <div>
+                  <div class="p-head">
+                    <h3>탕탕 · 지갑재판소</h3>
+                    <a
+                      class="p-link"
+                      href="https://github.com/KB-TangTang/Monorepo"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >GitHub ↗</a
+                    >
+                  </div>
+                  <p class="p-sum">
+                    고정지출을 자동으로 탐지하고, 절약 시뮬레이션과 챌린지로
+                    행동을 유도한 뒤, 월간 리포트로 실제 절감액까지 검증하는
+                    자산관리 서비스. 실시간 계층과 금융기관 연동, 성능 측정을
+                    담당했습니다.
+                  </p>
+
+                  <div class="calls">
+                    <div class="call">
+                      <span class="verdict drop">기각</span>
+                      <p>
+                        <b>Kafka를 도입했다 걷어냈습니다.</b> 6명이 7주 안에
+                        완성해야 하는데 브로커까지 운영하면 기능이 안 나온다고
+                        봤습니다. 대신 사라지는 재처리 보장을 DLQ 테이블과 60초
+                        재시도 배치로 직접 메웠고, 그 DLQ가 실제 알림 결함을
+                        잡아냈습니다.
+                      </p>
+                    </div>
+                    <div class="call">
+                      <span class="verdict keep">채택</span>
+                      <p>
+                        <b>알림은 SSE, 채팅은 WebSocket으로 갈랐습니다.</b>
+                        알림은 단방향이라 SSE로 충분하고 연결 비용이 낮습니다.
+                        하나로 통일하면 알림 쪽이 과설계가 됩니다.
+                      </p>
+                    </div>
+                    <div class="call">
+                      <span class="verdict keep">채택</span>
+                      <p>
+                        <b>채팅 저장은 Lua 스크립트로 원자화했습니다.</b> 번호
+                        발급과 저장이 따로 나가 순서가 역전되던 문제를 로컬에서
+                        재현한 뒤 고쳤고, 실 Redis 60건 동시 전송으로 확인했습니다.
+                      </p>
+                    </div>
+                    <div class="call">
+                      <span class="verdict drop">기각</span>
+                      <p>
+                        <b>커넥션풀 조정은 실험 후 되돌렸습니다.</b> 10에서 5로
+                        줄여봤으나 처리량은 2.8%만 늘어 판정 기준에 못 미쳤고
+                        중앙값은 34% 나빠졌습니다. 튜닝했다가 아니라 재보고
+                        유지했다가 맞는 말입니다.
+                      </p>
+                    </div>
+                  </div>
+
+                  <p class="stack-line">
+                    JAVA 17 · SPRING FRAMEWORK · MYBATIS · MYSQL · REDIS · SSE ·
+                    STOMP · VUE 3 · DOCKER · NGINX · AWS EC2 · K6
+                  </p>
+                </div>
+              </article>
+
+              <!-- 탄소중립 -->
+              <article class="project">
+                <div class="p-meta">
+                  <b>2024.11 – 12</b>
+                  5인 · 기여 60%
+                  <span class="tag">교내 1등</span>
+                </div>
+                <div>
+                  <div class="p-head">
+                    <h3>탄소 배출 중립화 플랫폼</h3>
+                    <a
+                      class="p-link"
+                      href="https://github.com/JAEHAN-JANG/p-carbon-neutral"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >GitHub ↗</a
+                    >
+                  </div>
+                  <p class="p-sum">
+                    배출량을 계산해 보여주는 데서 멈추면 다시 들어올 이유가
+                    없습니다. 입력에서 계산, 평균 비교, AI 제안, 마일리지,
+                    상점까지 이어지는 구조를 설계해 P-프로젝트 1등을 받았습니다.
+                  </p>
+                  <div class="calls">
+                    <div class="call">
+                      <span class="verdict keep">채택</span>
+                      <p>
+                        <b>AI는 생성에만 썼습니다.</b> 배출량 계산과 평균 비교는
+                        규칙으로 처리하고, GPT는 그 결과를 문장으로 만드는 데만
+                        썼습니다. 숫자 판정을 AI에 맡기면 근거를 설명할 수 없습니다.
+                      </p>
+                    </div>
+                    <div class="call">
+                      <span class="verdict keep">채택</span>
+                      <p>
+                        <b>외부 API 실패를 기본 분기로 뒀습니다.</b> GPT 호출이
+                        실패하면 항목별 초과 배출량 기반 사전 정의 가이드를
+                        내려줍니다. 품질은 낮아도 화면이 비지는 않습니다.
+                      </p>
+                    </div>
+                  </div>
+                  <p class="stack-line">
+                    REACT · NODE.JS · EXPRESS · MYSQL · JWT · GPT-3.5 API ·
+                    OPENWEATHER API
+                  </p>
+                </div>
+              </article>
+
+              <!-- WellBridge -->
+              <article class="project">
+                <div class="p-meta">
+                  <b>2025.09 – 12</b>
+                  실무 단독
+                  <span class="tag">인턴</span>
+                </div>
+                <div>
+                  <div class="p-head">
+                    <h3>WellBridge 기업 홈페이지·관리자 시스템</h3>
+                    <a
+                      class="p-link"
+                      href="https://github.com/JAEHAN-JANG/wellbridge-homepage"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >GitHub ↗</a
+                    >
+                  </div>
+                  <p class="p-sum">
+                    실제 운영 중인 기업 서비스라, 기능을 만드는 것보다 운영자와
+                    사용자가 보는 화면이 항상 같은 데이터를 가리키게 만드는 것이
+                    진짜 일이었습니다.
+                  </p>
+                  <div class="calls">
+                    <div class="call">
+                      <span class="verdict keep">채택</span>
+                      <p>
+                        <b>저장 경로와 접근 URL을 분리했습니다.</b> 파일이 디스크
+                        어디에 쌓이는가와 브라우저가 어떤 URL로 가져오는가는 서로
+                        다른 축입니다. 하나로 섞어 쓰면 로컬에선 되고 배포에선
+                        깨집니다.
+                      </p>
+                    </div>
+                    <div class="call">
+                      <span class="verdict keep">채택</span>
+                      <p>
+                        <b>인증을 JWT로 표준화했습니다.</b> 관리자와 사용자가 같은
+                        API를 바라보는 구조라, 무상태 토큰으로 두면 권한 검사를
+                        요청 단위로 닫을 수 있습니다.
+                      </p>
+                    </div>
+                  </div>
+                  <p class="stack-line">
+                    JAVA · SPRING BOOT · JPA · JWT · MYSQL · REACT · VITE ·
+                    NGINX · PM2
+                  </p>
+                </div>
+              </article>
+
+              <!-- 멍냥케어 -->
+              <article class="project">
+                <div class="p-meta">
+                  <b>2025.03 – 06</b>
+                  5인 · 기여 50%
+                  <span class="tag">졸업 프로젝트</span>
+                </div>
+                <div>
+                  <div class="p-head">
+                    <h3>멍냥케어 반려동물 피부질환 AI 진단</h3>
+                    <a
+                      class="p-link"
+                      href="https://github.com/JAEHAN-JANG/MeongNyang-Care"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >GitHub ↗</a
+                    >
+                  </div>
+                  <p class="p-sum">
+                    약 1.3TB 이미지로 반려견 모델을 학습했습니다. 어려웠던 건
+                    모델 정확도가 아니라 데이터 품질과, 모델 출력을 사용자가
+                    읽을 수 있는 결과로 바꾸는 일이었습니다.
+                  </p>
+                  <div class="calls">
+                    <div class="call">
+                      <span class="verdict keep">채택</span>
+                      <p>
+                        <b>분류가 아니라 U-Net 영역분할을 골랐습니다.</b> 질환
+                        여부만 알려주면 어느 부위를 봐야 할지 모릅니다. 병변
+                        영역을 그려야 단계와 범위를 설명할 수 있습니다.
+                      </p>
+                    </div>
+                    <div class="call">
+                      <span class="verdict keep">채택</span>
+                      <p>
+                        <b>매칭 기준을 먼저 정하고 시작했습니다.</b> 라벨이
+                        어긋나도 학습은 에러 없이 끝납니다. 1.3TB를 다시 돌리는
+                        건 하루가 사라지는 일이라 전처리를 단계별로 검증했습니다.
+                      </p>
+                    </div>
+                  </div>
+                  <p class="stack-line">
+                    PYTHON · TENSORFLOW · U-NET · CNN · OPENCV · SPRING BOOT
+                  </p>
+                </div>
+              </article>
+
+              <!-- GCShop -->
+              <article class="project">
+                <div class="p-meta">
+                  <b>2024.03 – 06</b>
+                  개인 · 기여 100%
+                  <span class="tag">개인 프로젝트</span>
+                </div>
+                <div>
+                  <div class="p-head">
+                    <h3>GCShop 쇼핑몰</h3>
+                    <a
+                      class="p-link"
+                      href="https://github.com/JAEHAN-JANG/gcshop"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >GitHub ↗</a
+                    >
+                  </div>
+                  <p class="p-sum">
+                    혼자 화면부터 DB까지 끝까지 연결해 본 첫 프로젝트입니다.
+                    구매 한 번에 재고와 마일리지가 동시에 정확히 바뀌게 만드는
+                    것이 핵심이었습니다.
+                  </p>
+                  <div class="calls">
+                    <div class="call">
+                      <span class="verdict keep">채택</span>
+                      <p>
+                        <b>구매 검증을 전부 서버에 뒀습니다.</b> 재고와 마일리지는
+                        돈과 같은 값이라 클라이언트가 보낸 값을 믿을 수 없습니다.
+                      </p>
+                    </div>
+                    <div class="call">
+                      <span class="verdict drop">한계</span>
+                      <p>
+                        <b>트랜잭션으로 묶지는 못했습니다.</b> 검증 후 순차 처리라
+                        동시 구매에는 여전히 취약합니다. 이 아쉬움이 이후 탕탕에서
+                        원자적 연산으로 이어졌습니다.
+                      </p>
+                    </div>
+                  </div>
+                  <p class="stack-line">
+                    NODE.JS · EXPRESS · EJS · MYSQL · SESSION
+                  </p>
+                </div>
+              </article>
+
+              <!-- Habit Check -->
+              <article class="project">
+                <div class="p-meta">
+                  <b>2026</b>
+                  개인
+                  <span class="tag">AI 협업 실험</span>
+                </div>
+                <div>
+                  <div class="p-head">
+                    <h3>Habit Check · Codex Agent</h3>
+                    <a
+                      class="p-link"
+                      href="https://github.com/JAEHAN-JANG/codex-ai-mcp"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >GitHub ↗</a
+                    >
+                  </div>
+                  <p class="p-sum">
+                    습관 기록 웹 앱을 만들면서, 그 위에 AI와 안전하게 협업하는
+                    개발 하네스를 구축했습니다. 주제는 앱이 아니라 생성된 변경을
+                    무엇으로 검증할 것인가였습니다.
+                  </p>
+                  <div class="calls">
+                    <div class="call">
+                      <span class="verdict keep">채택</span>
+                      <p>
+                        <b>규칙을 파일 하나로 뒀습니다.</b> 실행 명령과 검증
+                        기준을 한곳에 모으면 어떤 도구를 쓰든 같은 기준으로
+                        작업하게 됩니다. 이 방식을 이후 팀 프로젝트에 그대로
+                        적용했습니다.
+                      </p>
+                    </div>
+                    <div class="call">
+                      <span class="verdict keep">채택</span>
+                      <p>
+                        <b>검증을 CI에 붙였습니다.</b> 눈으로 보는 리뷰는
+                        빠집니다. 테스트와 Docker 빌드를 PR 조건으로 걸어 통과하지
+                        않으면 들어오지 못하게 했습니다.
+                      </p>
+                    </div>
+                  </div>
+                  <p class="stack-line">
+                    JAVASCRIPT · NODE.JS · DOCKER · GITHUB ACTIONS · CODEX
+                  </p>
+                </div>
+              </article>
+
+              <!-- 가계부 / 퀴즈 -->
+              <article class="project">
+                <div class="p-meta">
+                  <b>2026.03 – 04</b>
+                  4–5인 팀
+                  <span class="tag">단기 팀 프로젝트</span>
+                </div>
+                <div>
+                  <div class="p-head">
+                    <h3>Lucky/Unlucky Bank 가계부 · 실시간 퀴즈 배틀</h3>
+                    <a
+                      class="p-link"
+                      href="https://github.com/kb7-blackpink/Blackpink_AccountBook"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >GitHub ↗</a
+                    >
+                  </div>
+                  <p class="p-sum">
+                    가계부에서는 Vue 3와 Pinia로 전역 상태를 정리해 모든 화면이
+                    같은 숫자를 보게 만들었고, 퀴즈 배틀에서는 Socket.IO로 상태의
+                    주인을 서버로 통일했습니다.
+                  </p>
+                  <div class="calls">
+                    <div class="call">
+                      <span class="verdict keep">채택</span>
+                      <p>
+                        <b>상태의 주인을 한 곳에 모았습니다.</b> 캘린더에서 본
+                        합계와 대시보드 요약이 다르면 가계부로서 신뢰를 잃습니다.
+                        프론트에서도 같은 원칙이 통했습니다.
+                      </p>
+                    </div>
+                    <div class="call">
+                      <span class="verdict keep">채택</span>
+                      <p>
+                        <b>끊기는 경우를 먼저 다뤘습니다.</b> 실시간 서비스는 정상
+                        흐름보다 상대가 나갔을 때가 먼저입니다. 연결 종료를 감지해
+                        게임을 정리하도록 했습니다.
+                      </p>
+                    </div>
+                  </div>
+                  <p class="stack-line">
+                    VUE 3 · PINIA · TAILWIND CSS · CHART.JS · NODE.JS ·
+                    SOCKET.IO · VERCEL
+                  </p>
+                </div>
+              </article>
             </div>
-          </article>
-
-          <article class="project-card featured">
-            <div class="project-top">
-              <div>
-                <p class="project-type">Team Project</p>
-                <h3>Carbon Neutral Platform (P-Project)</h3>
-              </div>
-              <a
-                href="https://github.com/JAEHAN-JANG/p-carbon-neutral"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-link"
-                >Repository ↗</a
-              >
-            </div>
-
-            <p class="project-summary">
-              탄소 배출량 계산 및 중립화 지원 웹 서비스. 사용자 입력을 기반으로
-              배출량을 계산하고, 월별·평균·전월 대비 데이터를 비교 및
-              시각화했습니다. 교내 P-프로젝트 1등 수상.
-            </p>
-
-            <ul class="project-points">
-              <li>사용자 입력 기반 탄소 배출량 계산 로직 구현</li>
-              <li>월별·평균·전월 비교 데이터 시각화</li>
-              <li>OpenWeather API, OpenAI API 연동</li>
-              <li>외부 API 실패 시 사전 정의 가이드로 전환하는 폴백 로직 구성</li>
-              <li>프론트엔드·백엔드·DB 설계 전반 담당</li>
-            </ul>
-
-            <div class="project-tags">
-              <span>React</span>
-              <span>Node.js</span>
-              <span>MySQL</span>
-              <span>API Integration</span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top">
-              <div>
-                <p class="project-type">Team Project</p>
-                <h3>Lucky Bank &amp; Unlucky Bank</h3>
-              </div>
-              <a
-                href="https://github.com/kb7-blackpink/Blackpink_AccountBook"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-link"
-                >Repository ↗</a
-              >
-            </div>
-
-            <p class="project-summary">
-              소비 기록을 넘어 피드백을 통해 소비 습관 변화를 유도하는 가계부 웹 앱.
-              수입·지출 기록, 달력 기반 거래 내역 관리, 통계 시각화, Lucky /
-              Unlucky 모드 기반 UX를 구현했습니다.
-            </p>
-
-            <ul class="project-points">
-              <li>수입 / 지출 기록 및 캘린더 기반 거래 내역 관리 기능 구현</li>
-              <li>Lucky / Unlucky 모드를 통한 차별화된 소비 피드백 UX 설계</li>
-              <li>기간별 필터링, 빠른 거래 등록, 소비 통계 시각화 기능 구현</li>
-              <li>메인 페이지 달력 기능 및 JSON Server 배포 담당</li>
-            </ul>
-
-            <div class="project-tags">
-              <span>Vue</span>
-              <span>Tailwind CSS</span>
-              <span>Chart.js</span>
-              <span>JSON Server</span>
-              <span>Railway</span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top">
-              <div>
-                <p class="project-type">Team Project</p>
-                <h3>Quiz Battle</h3>
-              </div>
-              <a
-                href="https://github.com/JAEHAN-JANG/Quiz-Battle"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-link"
-                >Repository ↗</a
-              >
-            </div>
-
-            <p class="project-summary">
-              Socket.io 기반 실시간 1대1 퀴즈 배틀 웹 서비스. 룸 번호를 기준으로
-              사용자를 매칭하고, 실시간 이벤트를 통해 대기·입장·대결 흐름을
-              구현했습니다.
-            </p>
-
-            <ul class="project-points">
-              <li>Node.js(server) + Vanilla JavaScript 기반 서비스 개발</li>
-              <li>socket.io를 활용한 Room 번호 기반 실시간 1 vs 1 대전 기능 구현</li>
-              <li>JSON 기반 문제 데이터를 활용해 서버에서 랜덤 문제 출제</li>
-              <li>실시간 이벤트 처리와 게임 흐름 설계 경험</li>
-            </ul>
-
-            <div class="project-tags">
-              <span>Node.js</span>
-              <span>Socket.io</span>
-              <span>JavaScript</span>
-              <span>Real-time Service</span>
-            </div>
-          </article>
-
-          <article class="project-card featured">
-            <div class="project-top">
-              <div>
-                <p class="project-type">AI Pair Programming Project</p>
-                <h3>Habit Check / Codex AI MCP</h3>
-              </div>
-              <a
-                href="https://github.com/JAEHAN-JANG/codex-ai-mcp"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-link"
-                >Repository ↗</a
-              >
-            </div>
-
-            <p class="project-summary">
-              Codex Agent와 함께 개발 흐름을 설계하고 검증한 AI Pair Programming
-              실험 프로젝트. 하루 단위 습관을 기록하는 Habit Check 앱을 만들며,
-              단순 기능 구현을 넘어 테스트 자동화와 CI/CD 검증 루프까지 구성했습니다.
-            </p>
-
-            <ul class="project-points">
-              <li>습관 추가 / 수정 / 삭제 / 완료 처리 기능 구현</li>
-              <li>날짜별 습관 기록을 localStorage에 저장하고 조회하는 구조 설계</li>
-              <li>AGENTS.md, Issue, PR, 리뷰 흐름을 정리해 Codex Agent 협업 기준 마련</li>
-              <li>Core Test / Smoke Test로 핵심 로직과 앱 실행 흐름 검증</li>
-              <li>GitHub Actions 기반 테스트 자동화 및 Docker Build 검증 환경 구성</li>
-            </ul>
-
-            <div class="project-tags">
-              <span>JavaScript</span>
-              <span>Node.js</span>
-              <span>Codex</span>
-              <span>GitHub Actions</span>
-              <span>Docker</span>
-              <span>AI Collaboration</span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top">
-              <div>
-                <p class="project-type">Academic Project</p>
-                <h3>GCShop (가천샵)</h3>
-              </div>
-              <a
-                href="https://github.com/JAEHAN-JANG/gcshop"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-link"
-                >Repository ↗</a
-              >
-            </div>
-
-            <p class="project-summary">
-              대학 수업 프로젝트로 제작한 쇼핑몰 웹 서비스. 상품 조회, 회원
-              관리, 장바구니, 구매 기능을 구현하며 웹과 데이터베이스 연동 구조를
-              익혔습니다.
-            </p>
-
-            <ul class="project-points">
-              <li>상품 조회, 회원 관리, 장바구니, 구매 기능 구현</li>
-              <li>웹과 데이터베이스 연동 구조 이해</li>
-              <li>MVC 기반 서버 로직 설계 경험</li>
-              <li>구매 성공 조건을 백엔드에서 먼저 검증한 뒤 재고·마일리지 차감</li>
-            </ul>
-
-            <div class="project-tags">
-              <span>Node.js</span>
-              <span>Express</span>
-              <span>MySQL</span>
-              <span>MVC</span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top">
-              <div>
-                <p class="project-type">Graduation Project</p>
-                <h3>멍냥케어</h3>
-              </div>
-              <a
-                href="https://github.com/JAEHAN-JANG/MeongNyang-Care"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-link"
-                >Repository ↗</a
-              >
-            </div>
-
-            <p class="project-summary">
-              반려동물 피부 질환 예측 및 케어 지원 AI 서비스. 데이터 수집,
-              모델 학습, 성능 개선, 서비스 적용까지 전 과정을 경험했습니다.
-            </p>
-
-            <ul class="project-points">
-              <li>AI Hub 이미지 데이터 약 1.3TB 기반 피부 질환 분류</li>
-              <li>CNN / U-Net 모델 학습 및 성능 개선</li>
-              <li>예측 모델을 실제 서비스 기능과 연동</li>
-              <li>데이터 수집 → 모델 학습 → 서비스 적용 전 과정 경험</li>
-            </ul>
-
-            <div class="project-tags">
-              <span>Python</span>
-              <span>TensorFlow</span>
-              <span>U-Net</span>
-              <span>AI Service</span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top">
-              <div>
-                <p class="project-type">Practical Experience</p>
-                <h3>WellBridge Homepage</h3>
-              </div>
-              <a
-                href="https://github.com/JAEHAN-JANG/wellbridge-homepage"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-link"
-                >Repository ↗</a
-              >
-            </div>
-
-            <p class="project-summary">
-              실무 환경에서 진행한 기업 홈페이지 및 관리자 시스템 개발. 실제
-              서비스 관점에서 인증, 파일 업로드, 콘텐츠 관리 구조를 다뤘습니다.
-            </p>
-
-            <ul class="project-points">
-              <li>React + Spring Boot 기반 서비스 개발</li>
-              <li>관리자 인증, 파일 업로드, 콘텐츠 관리 기능 구현</li>
-              <li>
-                등록한 이미지가 사용자 화면에 노출되지 않던 오류를 추적해 저장
-                경로·접근 URL·배포 경로 기준을 하나로 통일
-              </li>
-              <li>실무 환경의 개발 흐름과 유지보수 구조 경험</li>
-              <li>회사 코드 비공개</li>
-            </ul>
-
-            <div class="project-tags">
-              <span>React</span>
-              <span>Spring Boot</span>
-              <span>JWT</span>
-              <span>File Upload</span>
-            </div>
-          </article>
+          </div>
         </div>
       </section>
 
-      <section class="section container">
-        <div class="section-heading">
-          <p class="section-label">VALUE</p>
-          <h2>제가 전달할 수 있는 가치</h2>
-        </div>
-
-        <div class="value-grid">
-          <article class="card">
-            <h3>전체 흐름에 대한 이해</h3>
-            <p>
-              프론트엔드, 백엔드, 데이터베이스, 배포를 연결해 생각할 수 있어
-              협업 시에도 큰 그림을 이해하며 소통할 수 있습니다.
+      <!-- ================= STACK ================= -->
+      <section id="stack" class="section">
+        <div class="container rail">
+          <p class="label">기술</p>
+          <div>
+            <h2>사용 경험 기술</h2>
+            <p class="legend">
+              ███ 혼자 설계하고 구현할 수 있다 &nbsp;·&nbsp; ██ 문서를 보며
+              구현하고 문제를 좁힐 수 있다
             </p>
-          </article>
 
-          <article class="card">
-            <h3>측정으로 판단합니다</h3>
-            <p>
-              성능은 감이 아니라 숫자로 말합니다. 부하테스트로 병목을 특정하고,
-              개선안이 기준에 미달하면 근거를 남기고 기각합니다. 기본값을 그냥
-              둔 것과 재보고 맞다고 확인한 것은 다른 이야기라고 생각합니다.
-            </p>
-          </article>
+            <div class="stack-groups">
+              <section>
+                <h3>Backend</h3>
+                <div class="skill">
+                  <span>Spring Boot / JPA</span
+                  ><span class="bar">███<i>██</i></span>
+                </div>
+                <div class="skill">
+                  <span>Spring Framework / MyBatis</span
+                  ><span class="bar">███<i>██</i></span>
+                </div>
+                <div class="skill">
+                  <span>SSE / Spring Event</span
+                  ><span class="bar">███<i>██</i></span>
+                </div>
+                <div class="skill">
+                  <span>WebSocket / STOMP</span
+                  ><span class="bar">███<i>██</i></span>
+                </div>
+                <div class="skill">
+                  <span>Node.js / Express</span
+                  ><span class="bar">███<i>██</i></span>
+                </div>
+              </section>
 
-          <article class="card">
-            <h3>기록으로 남기는 협업</h3>
-            <p>
-              팀장으로 기술 결정을 이유·영향·기각한 대안과 함께 기록했고,
-              되돌린 결정도 지우지 않았습니다. 나중에 왜 이렇게 되어 있는지
-              묻는 질문마다 답이 이미 적혀 있었습니다.
-            </p>
-          </article>
+              <section>
+                <h3>Database</h3>
+                <div class="skill">
+                  <span>MySQL</span><span class="bar">███<i>██</i></span>
+                </div>
+                <div class="skill">
+                  <span>Redis</span><span class="bar">███<i>██</i></span>
+                </div>
+              </section>
+
+              <section>
+                <h3>Frontend</h3>
+                <div class="skill">
+                  <span>Vue 3 / Pinia</span
+                  ><span class="bar">███<i>██</i></span>
+                </div>
+                <div class="skill">
+                  <span>React / Vite</span><span class="bar">███<i>██</i></span>
+                </div>
+              </section>
+
+              <section>
+                <h3>DevOps</h3>
+                <div class="skill">
+                  <span>Docker / Compose</span
+                  ><span class="bar">███<i>██</i></span>
+                </div>
+                <div class="skill">
+                  <span>Nginx / AWS EC2 / Vercel</span
+                  ><span class="bar">███<i>██</i></span>
+                </div>
+                <div class="skill">
+                  <span>GitHub Actions</span><span class="bar">██<i>███</i></span>
+                </div>
+              </section>
+
+              <section>
+                <h3>Testing / Performance</h3>
+                <div class="skill">
+                  <span>k6</span><span class="bar">███<i>██</i></span>
+                </div>
+                <div class="skill">
+                  <span>JUnit</span><span class="bar">███<i>██</i></span>
+                </div>
+                <div class="skill">
+                  <span>JaCoCo / Swagger</span
+                  ><span class="bar">██<i>███</i></span>
+                </div>
+              </section>
+
+              <section>
+                <h3>Language / AI</h3>
+                <div class="skill">
+                  <span>Java / JavaScript / Python</span
+                  ><span class="bar">███<i>██</i></span>
+                </div>
+                <div class="skill">
+                  <span>U-Net / TensorFlow / OpenCV</span
+                  ><span class="bar">███<i>██</i></span>
+                </div>
+                <div class="skill">
+                  <span>GPT / OpenWeather / CODEF API</span
+                  ><span class="bar">███<i>██</i></span>
+                </div>
+              </section>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="contact" class="section container contact-section">
-        <div class="section-heading">
-          <p class="section-label">CONTACT</p>
-          <h2>함께 일할 기회를 기다리고 있습니다</h2>
-        </div>
-
-        <div class="contact-card">
-          <p>
-            백엔드와 풀스택 개발을 기반으로, 구조를 이해하고 사용자에게 더 나은
-            경험을 제공하는 서비스를 만들고 싶습니다.
-          </p>
-
+      <!-- ================= CONTACT ================= -->
+      <section id="contact" class="section">
+        <div class="container contact-inner">
+          <h2>같이 일할 기회를 기다립니다</h2>
           <div class="contact-links">
             <a
               href="https://github.com/JAEHAN-JANG"
               target="_blank"
               rel="noopener noreferrer"
-              >GitHub</a
+              >github.com/JAEHAN-JANG</a
             >
             <a href="mailto:twinsjh01@naver.com">twinsjh01@naver.com</a>
           </div>
@@ -638,8 +752,8 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer-inner">
-        <p>© 2026 JAEHAN JANG. All rights reserved.</p>
+      <div class="container">
+        <p>© 2026 JAEHAN JANG</p>
       </div>
     </footer>
   </body>
