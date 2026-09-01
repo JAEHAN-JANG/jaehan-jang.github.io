@@ -20,6 +20,18 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      /* 카드 하단 링크 묶음 (GitHub / Deploy 병기) */
+      .card-foot .links {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        flex-shrink: 0;
+      }
+      .card-foot .links .repo {
+        white-space: nowrap;
+      }
+    </style>
   </head>
   <body>
     <!-- ==================== SIDEBAR ==================== -->
@@ -31,7 +43,6 @@
         화면부터 서버, DB, 배포까지 연결해 실제로 운영되는 서비스를 만드는 백엔드
         개발자입니다.
       </p>
-
       <nav class="side-nav">
         <a href="#about" class="active">소개</a>
         <a href="#skills">기술 스택</a>
@@ -40,7 +51,6 @@
         <a href="#awards">수상 · 자격</a>
         <a href="#contact">연락처</a>
       </nav>
-
       <div class="side-contact">
         <a href="mailto:twinsjh01@naver.com">twinsjh01@naver.com</a>
         <a
@@ -51,25 +61,21 @@
         >
       </div>
     </aside>
-
     <main class="main">
       <!-- ==================== ABOUT ==================== -->
       <section id="about" class="section">
         <p class="eyebrow">ABOUT</p>
         <h2>소개</h2>
-
         <p class="hello">
           안녕하세요.<br />
           기능을 만드는 데서 멈추지 않고<br />
           <b>운영까지 책임지는 백엔드 개발자</b> 장재한입니다.
         </p>
-
         <p class="intro-body">
           실무 인턴으로 기업 홈페이지와 관리자 시스템을 단독 구축했고, 6인 팀의
           팀장으로 7주짜리 서비스를 처음부터 끝까지 만들어 배포했습니다. 화면과
           서버, 데이터베이스, 배포 환경을 하나의 흐름으로 보고 개발합니다.
         </p>
-
         <ul class="strengths">
           <li>
             <h3>고치기 전에 먼저 확인합니다</h3>
@@ -105,7 +111,6 @@
           </li>
         </ul>
       </section>
-
       <!-- ==================== SKILLS ==================== -->
       <section id="skills" class="section">
         <p class="eyebrow">SKILLS</p>
@@ -113,7 +118,6 @@
         <p class="lede">
           파란색으로 표시한 항목은 프로젝트에서 직접 설계하고 구현한 기술입니다.
         </p>
-
         <div class="skill-block">
           <h3>LANGUAGE</h3>
           <div class="tags">
@@ -121,7 +125,6 @@
             <span>Python</span><span>SQL</span><span>HTML/CSS</span>
           </div>
         </div>
-
         <div class="skill-block">
           <h3>BACKEND</h3>
           <div class="tags">
@@ -132,7 +135,6 @@
             <span class="key">JWT</span><span>Session</span>
           </div>
         </div>
-
         <div class="skill-block">
           <h3>REALTIME</h3>
           <div class="tags">
@@ -142,7 +144,6 @@
             <span>Socket.IO</span>
           </div>
         </div>
-
         <div class="skill-block">
           <h3>DATABASE</h3>
           <div class="tags">
@@ -150,7 +151,6 @@
             <span>JSON Server</span>
           </div>
         </div>
-
         <div class="skill-block">
           <h3>FRONTEND</h3>
           <div class="tags">
@@ -159,7 +159,6 @@
             ><span>Tailwind CSS</span><span>Chart.js</span>
           </div>
         </div>
-
         <div class="skill-block">
           <h3>DEVOPS</h3>
           <div class="tags">
@@ -168,7 +167,6 @@
             <span>GitHub Actions</span><span>PM2</span>
           </div>
         </div>
-
         <div class="skill-block">
           <h3>TEST / PERF</h3>
           <div class="tags">
@@ -176,7 +174,6 @@
             <span>Swagger</span>
           </div>
         </div>
-
         <div class="skill-block">
           <h3>AI / API</h3>
           <div class="tags">
@@ -186,7 +183,6 @@
           </div>
         </div>
       </section>
-
       <!-- ==================== PROJECTS ==================== -->
       <section id="projects" class="section">
         <p class="eyebrow">PROJECTS</p>
@@ -195,7 +191,6 @@
           팀 프로젝트 5건, 개인 프로젝트 2건, 실무 1건입니다. 각 항목에 제가 맡은
           역할과 그때 내린 판단을 함께 적었습니다.
         </p>
-
         <div class="grid">
           <!-- 탕탕 -->
           <article class="card">
@@ -234,17 +229,25 @@
                 <span class="stack"
                   >SPRING FRAMEWORK · MYBATIS · MYSQL · REDIS · VUE 3 · K6</span
                 >
-                <a
-                  class="repo"
-                  href="https://github.com/KB-TangTang/Monorepo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >GitHub ↗</a
-                >
+                <span class="links">
+                  <a
+                    class="repo"
+                    href="https://monorepo-three-ruby-81.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Deploy ↗</a
+                  >
+                  <a
+                    class="repo"
+                    href="https://github.com/KB-TangTang/Monorepo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub ↗</a
+                  >
+                </span>
               </div>
             </div>
           </article>
-
           <!-- WellBridge -->
           <article class="card">
             <div class="card-top c-well">
@@ -273,17 +276,18 @@
                 <span class="stack"
                   >SPRING BOOT · JPA · JWT · MYSQL · REACT · NGINX · PM2</span
                 >
-                <a
-                  class="repo"
-                  href="https://github.com/JAEHAN-JANG/wellbridge-homepage"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >GitHub ↗</a
-                >
+                <span class="links">
+                  <a
+                    class="repo"
+                    href="https://github.com/JAEHAN-JANG/wellbridge-homepage"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub ↗</a
+                  >
+                </span>
               </div>
             </div>
           </article>
-
           <!-- 탄소중립 -->
           <article class="card">
             <div class="card-top c-carbon">
@@ -312,17 +316,18 @@
                 <span class="stack"
                   >REACT · NODE.JS · EXPRESS · MYSQL · JWT · GPT API</span
                 >
-                <a
-                  class="repo"
-                  href="https://github.com/JAEHAN-JANG/p-carbon-neutral"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >GitHub ↗</a
-                >
+                <span class="links">
+                  <a
+                    class="repo"
+                    href="https://github.com/JAEHAN-JANG/p-carbon-neutral"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub ↗</a
+                  >
+                </span>
               </div>
             </div>
           </article>
-
           <!-- 멍냥케어 -->
           <article class="card">
             <div class="card-top c-meong">
@@ -350,17 +355,18 @@
                 <span class="stack"
                   >PYTHON · TENSORFLOW · U-NET · CNN · OPENCV</span
                 >
-                <a
-                  class="repo"
-                  href="https://github.com/JAEHAN-JANG/MeongNyang-Care"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >GitHub ↗</a
-                >
+                <span class="links">
+                  <a
+                    class="repo"
+                    href="https://github.com/JAEHAN-JANG/MeongNyang-Care"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub ↗</a
+                  >
+                </span>
               </div>
             </div>
           </article>
-
           <!-- GCShop -->
           <article class="card">
             <div class="card-top c-gcshop">
@@ -386,17 +392,18 @@
               </ul>
               <div class="card-foot">
                 <span class="stack">NODE.JS · EXPRESS · EJS · MYSQL</span>
-                <a
-                  class="repo"
-                  href="https://github.com/JAEHAN-JANG/gcshop"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >GitHub ↗</a
-                >
+                <span class="links">
+                  <a
+                    class="repo"
+                    href="https://github.com/JAEHAN-JANG/gcshop"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub ↗</a
+                  >
+                </span>
               </div>
             </div>
           </article>
-
           <!-- Quiz Battle -->
           <article class="card">
             <div class="card-top c-quiz">
@@ -420,17 +427,18 @@
               </ul>
               <div class="card-foot">
                 <span class="stack">NODE.JS · SOCKET.IO · JAVASCRIPT</span>
-                <a
-                  class="repo"
-                  href="https://github.com/JAEHAN-JANG/Quiz-Battle"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >GitHub ↗</a
-                >
+                <span class="links">
+                  <a
+                    class="repo"
+                    href="https://github.com/JAEHAN-JANG/Quiz-Battle"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub ↗</a
+                  >
+                </span>
               </div>
             </div>
           </article>
-
           <!-- 가계부 -->
           <article class="card">
             <div class="card-top c-bank">
@@ -454,17 +462,25 @@
               </ul>
               <div class="card-foot">
                 <span class="stack">VUE 3 · PINIA · TAILWIND · CHART.JS</span>
-                <a
-                  class="repo"
-                  href="https://github.com/kb7-blackpink/Blackpink_AccountBook"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >GitHub ↗</a
-                >
+                <span class="links">
+                  <a
+                    class="repo"
+                    href="https://blackpink-account-book.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Deploy ↗</a
+                  >
+                  <a
+                    class="repo"
+                    href="https://github.com/kb7-blackpink/Blackpink_AccountBook"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub ↗</a
+                  >
+                </span>
               </div>
             </div>
           </article>
-
           <!-- Habit Check -->
           <article class="card">
             <div class="card-top c-habit">
@@ -490,24 +506,24 @@
                 <span class="stack"
                   >JAVASCRIPT · NODE.JS · DOCKER · GITHUB ACTIONS</span
                 >
-                <a
-                  class="repo"
-                  href="https://github.com/JAEHAN-JANG/codex-ai-mcp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >GitHub ↗</a
-                >
+                <span class="links">
+                  <a
+                    class="repo"
+                    href="https://github.com/JAEHAN-JANG/codex-ai-mcp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub ↗</a
+                  >
+                </span>
               </div>
             </div>
           </article>
         </div>
       </section>
-
       <!-- ==================== EXPERIENCE ==================== -->
       <section id="experience" class="section">
         <p class="eyebrow">EXPERIENCE</p>
         <h2>경력 · 교육</h2>
-
         <ul class="timeline">
           <li>
             <div class="period">
@@ -529,7 +545,6 @@
               </ul>
             </div>
           </li>
-
           <li>
             <div class="period">
               <b>2025.09 – 2025.12</b>
@@ -548,7 +563,6 @@
               </ul>
             </div>
           </li>
-
           <li>
             <div class="period">
               <b>2020.03 – 2026.02</b>
@@ -569,12 +583,10 @@
           </li>
         </ul>
       </section>
-
       <!-- ==================== AWARDS ==================== -->
       <section id="awards" class="section">
         <p class="eyebrow">AWARDS &amp; CERTIFICATES</p>
         <h2>수상 · 자격 · 어학</h2>
-
         <div class="table-wrap">
           <table>
             <thead>
@@ -623,12 +635,10 @@
           연계)
         </p>
       </section>
-
       <!-- ==================== CONTACT ==================== -->
       <section id="contact" class="section">
         <p class="eyebrow">CONTACT</p>
         <h2>연락처</h2>
-
         <div class="contact-box">
           <p>
             백엔드와 풀스택 개발을 기반으로, 구조를 이해하고 사용자에게 더 나은
@@ -649,9 +659,7 @@
         </div>
       </section>
     </main>
-
     <footer class="footer">© 2026 JAEHAN JANG</footer>
-
     <script>
       // 현재 보고 있는 섹션을 사이드바에 표시합니다.
       const links = [...document.querySelectorAll(".side-nav a")];
